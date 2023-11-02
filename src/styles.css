@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'PT Serif', serif;
+}
+
+.btnText{ 
+    font-family: 'Inter', sans-serif;
+}
+
+.textHighlight{
+    font-family: 'Bowlby One SC', sans-serif;
+}
+
+/* #tagline {
+    margin-left: 22px;
+} */
