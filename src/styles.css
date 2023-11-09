@@ -2,21 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+/* *{
     margin: 0px;
     padding: 0px;
-}
+} */
 
 body {
-    font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
 }
 
-.btnText{ 
-    font-family: 'Inter', sans-serif;
+.btnText {
+  font-family: "Inter", sans-serif;
 }
 
-.textHighlight{
-    font-family: 'Bowlby One SC', sans-serif;
+.textHighlight {
+  font-family: "Bowlby One SC", sans-serif;
+}
+
+@media screen and (min-height: 1024px) and (min-width: 1024px) {
+  #hero-container {
+    height: 800px;
+  }
 }
 
 /* #tagline {
