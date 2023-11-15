@@ -12,8 +12,8 @@
     />
     <title>Real Estate Success</title>
   </head>
-  <body class="w-screen overflow-x-hidden border-4 border-purple-700">
-    <div class="w-full flex flex-col items-center">
+  <body class="w-screen overflow-x-hidden">
+    <div class="w-full flex flex-col items-center relative">
       <!-- Header -->
       <div
         id="header"
@@ -35,7 +35,7 @@
           <!-- hero pic -->
           <div
             id="hero-pic-div"
-            class="flex lg:justify-center lg:w-2/5 xl:justify-end md:scale-75 lg:scale-100"
+            class="flex scale-100 lg:justify-center lg:w-2/5 xl:justify-end md:scale-75 lg:scale-100"
           >
             <img
               src="https://firebasestorage.googleapis.com/v0/b/student-lp1.appspot.com/o/man%20arms%20crossed%20trans.png?alt=media&token=10da7f0b-921f-4f3b-8da7-0a7828009d40"
@@ -46,7 +46,7 @@
           <!-- hero text -->
           <div
             id="hero-text-div"
-            class="flex flex-col w-full relative top-6 md:items-center lg:items-start md:justify-center lg:w-3/5 drop-shadow-md text-center"
+            class="flex flex-col w-full mt-10 mb-24 md:-mb-16 md:items-center lg:mb-0 lg:items-start md:justify-center lg:w-3/5 drop-shadow-md text-center"
           >
             <h1
               class="text-2xl md:text-5xl lg:text-4xl xl:text-5xl font-bold md:max-w-2xl lg:max-w-xl xl:max-w-2xl"
@@ -63,7 +63,7 @@
             </h1>
             <p
               id="tagline"
-              class="text-xl xl:text-2xl text-siteBlue md:ml-20 xl:ml-[5.5rem]"
+              class="text-lg md:text-2xl text-siteBlue md:ml-8 lg:ml-24 xl:ml-[5.5rem]"
             >
               Let's fast track your way to real estate success!
             </p>
@@ -74,27 +74,38 @@
       <!-- ************* Courses section ************* -->
       <section
         id="course-options"
-        class="bg-siteBlue md:pt-20 md:pb-32 lg:pt-10 lg:pb-10 w-full"
+        class="bg-siteBlue pt-12 pb-24 md:pt-20 md:pb-32 lg:pt-10 lg:pb-10 w-full"
       >
-        <div class="flex flex-col justify-center">
-          <h1
-            class="text-xl md:text-4xl font-bold md:mb-32 lg:mb-16 text-white text-center"
-          >
+        <div class="flex flex-col justify-center items-center">
+          <h1 class="text-xl md:text-4xl font-bold mb-4 text-white text-center">
             What Type of Investing Are You Interested in Learning?
           </h1>
+          <p
+            class="text-md mb-10 md:text-xl md:mb-32 lg:mb-16 text-white text-center max-w-3xl"
+          >
+            Let me hold your hand and put my over 10 years of experience closing
+            real estate deals at your disposal. From utilizing marketing
+            strategies that actually work not just burn up money, analyzing
+            deals and talking to sellers to finding buyers for wholesales deals
+            and managing contractors for rehabs and vetting and placing your
+            first tenants.
+          </p>
           <div
             id="courses"
-            class="flex flex-col lg:flex-row md:space-y-52 lg:space-y-0 md:justify-evenly md:items-center"
+            class="flex flex-col w-full lg:flex-row space-y-8 md:space-y-52 lg:space-y-0 md:justify-evenly items-center"
           >
             <div
               id="wholesaling-info"
-              class="flex flex-col md:h-80 md:w-72 border-2 border-white items-center justify-center pt-6 space-y-8 md:scale-150 lg:scale-100"
+              class="flex flex-col h-80 w-72 border-2 border-white items-center justify-center pt-6 space-y-8 md:scale-150 lg:scale-100"
             >
               <span class="rounded-full bg-white h-20 w-20"></span>
               <p class="text-white text-center text-lg mb-2 max-w-sm">
                 I want to start and grow my real estate WHOLESALING Business
               </p>
-              <button class="bg-white py-2 px-2 rounded-md">
+              <button
+                id="wholesale-btn"
+                class="bg-white py-2 px-2 rounded-md font-bold hover:scale-105 transition-all"
+              >
                 Start Flipping Contracts
               </button>
             </div>
@@ -106,8 +117,11 @@
               <p class="text-white text-center text-lg px-4">
                 I'm ready to find my first FIX & FLIP deal
               </p>
-              <button class="bg-white py-2 px-2 rounded-md">
-                let's Find My Fix & Flip
+              <button
+                id="rehab-btn"
+                class="bg-white py-2 px-2 rounded-md font-bold hover:scale-105 transition-all"
+              >
+                Let's Find My Fix & Flip
               </button>
             </div>
             <div
@@ -118,7 +132,10 @@
               <p class="text-white text-center text-lg mb-2 max-w-sm">
                 I want to start and grow my real estate WHOLESALING Business
               </p>
-              <button class="bg-white py-2 px-2 rounded-md">
+              <button
+                id="rentals-btn"
+                class="bg-white py-2 px-2 rounded-md font-bold hover:scale-105 transition-all"
+              >
                 Start Flipping Contracts
               </button>
             </div>
@@ -133,30 +150,142 @@
           <p class="text-xl">Is my program really as good as I say?</p>
           <p class="text-xl">Get the scoop from my students!</p>
         </div>
-        <div class="flex space-x-4 items-center justify-center w-full mt-8">
-          <img
-            id="review1"
-            src="https://placehold.jp/139x62.png"
-            alt="review 1"
-          />
-          <img
-            id="review2"
-            src="https://placehold.jp/139x62.png"
-            alt="review 2"
-          />
-          <img
-            id="review3"
-            src="https://placehold.jp/139x62.png"
-            alt="review 3"
-          />
-          <img
-            id="review4"
-            src="https://placehold.jp/139x62.png"
-            alt="review 4"
-          />
+        <div
+          id="reviews"
+          class="flex flex-col lg:flex-row lg:space-x-4 items-center justify-center w-full mt-8"
+        >
+          <!-- Review 1 -->
+          <div id="review1" class="flex lg:flex flex-col items-center fade">
+            <p class="max-w-md md:max-w-xl md:text-md text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus
+              risus at ultrices mi tempus imperdiet nulla malesuada. Eget mauris
+              pharetra et ultrices neque ornare aenean.
+            </p>
+            <div class="flex">
+              <h2 class="font-bold">John C. -</h2>
+              <p class="italic">Chesapeake, VA</p>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div id="review2" class="hidden lg:flex flex-col items-center fade">
+            <p class="max-w-md md:max-w-xl md:text-md text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus
+              risus at ultrices mi tempus imperdiet nulla malesuada. Eget mauris
+              pharetra et ultrices neque ornare aenean.
+            </p>
+            <div class="flex">
+              <h2 class="font-bold">Terry R. -</h2>
+              <p class="italic">Chesapeake, VA</p>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div id="review3" class="hidden lg:flex flex-col items-center fade">
+            <p class="max-w-md md:max-w-xl md:text-md text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus
+              risus at ultrices mi tempus imperdiet nulla malesuada. Eget mauris
+              pharetra et ultrices neque ornare aenean.
+            </p>
+            <div class="flex">
+              <h2 class="font-bold">Frank C. -</h2>
+              <p class="italic">Chesapeake, VA</p>
+            </div>
+          </div>
+          <!-- mobile review slide buttons -->
+          <div
+            id="slide-btn"
+            class="flex flex-row space-x-2 justify-center mt-5 lg:hidden"
+          >
+            <span
+              id="dot1"
+              class="dot bg-siteBlue h-4 w-4 border-2 rounded-full border-siteBlue"
+              onclick="showReview(1)"
+            ></span>
+            <span
+              id="dot2"
+              class="dot h-4 w-4 border-2 rounded-full border-siteBlue"
+              onclick="showReview(2)"
+            ></span>
+            <span
+              id="dot3"
+              class="dot h-4 w-4 border-2 rounded-full border-siteBlue"
+              onclick="showReview(3)"
+            ></span>
+          </div>
         </div>
       </section>
+      <!-- courses popup modal -->
+      <div
+        id="courses-popup"
+        class="hidden fixed bg-black/40 h-screen w-screen z-10"
+      >
+        <div
+          id="popup-content"
+          class="flex flex-col w-min items-center bg-white/100 m-auto pb-8 relative translate-y-20 animate-slide"
+        >
+          <span
+            id="popup-close-btn"
+            class="text-right w-full pr-2 hover:font-bold cursor-pointer mb-4"
+            >Close</span
+          >
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Y-x0efG1seA?si=M2F8kKi2D1sL-ufg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            class="scale-75 m-4 md:scale-100 md:mx-10"
+          ></iframe>
+          <h1 id="form-headline" class="text-black text-2xl font-bold"></h1>
+          <form
+            action="https://formsubmit.co/dvelleads+student@gmail.com"
+            method="post"
+            class="flex flex-col space-y-2 w-full items-center"
+          >
+            <input
+              type="hidden"
+              name="_next"
+              value="https://yourdomain.co/thanks.html"
+            />
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Coaching Student Lead"
+            />
+            <input
+              type="text"
+              name="fName"
+              id="fNAme"
+              placeholder="First Name"
+              class="bg-gray-200 w-2/4 rounded py-2 text-center h-8"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              class="bg-gray-200 w-2/4 rounded py-2 text-center h-8"
+              required
+            />
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Phone Number"
+              class="bg-gray-200 w-2/4 rounded py-2 text-center h-8"
+              required
+            />
+          </form>
+        </div>
+      </div>
     </div>
+
     <script src="./index.js"></script>
   </body>
 </html>
