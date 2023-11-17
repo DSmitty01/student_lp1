@@ -77,11 +77,13 @@
         class="bg-siteBlue pt-12 pb-24 md:pt-20 md:pb-32 lg:pt-10 lg:pb-10 w-full"
       >
         <div class="flex flex-col justify-center items-center">
-          <h1 class="text-xl md:text-4xl font-bold mb-4 text-white text-center">
+          <h1
+            class="text-xl md:text-4xl font-bold mx-6 mb-4 text-white text-center"
+          >
             What Type of Investing Are You Interested in Learning?
           </h1>
           <p
-            class="text-md mb-10 md:text-xl md:mb-32 lg:mb-16 text-white text-center max-w-3xl"
+            class="text-md mb-10 md:text-xl md:mb-32 lg:mb-16 text-white text-center max-w-3xl mx-2"
           >
             Let me hold your hand and put my over 10 years of experience closing
             real estate deals at your disposal. From utilizing marketing
@@ -143,7 +145,7 @@
         </div>
       </section>
 
-      <!-- Reviews Section -->
+      <!-- ********* Reviews Section ************** -->
       <section id="reviews-section" class="flex flex-col pt-20 pb-28">
         <div class="flex flex-col w-full items-center">
           <h1 class="text-4xl font-bold mb-2">Success Stories</h1>
@@ -218,10 +220,11 @@
           </div>
         </div>
       </section>
+
       <!-- courses popup modal -->
       <div
         id="courses-popup"
-        class="hidden fixed bg-black/40 h-screen w-screen z-10"
+        class="hidden fixed bg-black/40 h-screen sm:w-screen z-10"
       >
         <div
           id="popup-content"
@@ -229,10 +232,11 @@
         >
           <span
             id="popup-close-btn"
-            class="text-right w-full pr-2 hover:font-bold cursor-pointer mb-4"
+            class="text-right w-full pr-6 xs:pr-2 hover:font-bold cursor-pointer mb-4"
             >Close</span
           >
           <iframe
+            id="course-video"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/Y-x0efG1seA?si=M2F8kKi2D1sL-ufg"
@@ -240,7 +244,7 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
-            class="scale-75 m-4 md:scale-100 md:mx-10"
+            class="scale-75 m-2 md:m-4 md:scale-100 md:mx-10"
           ></iframe>
           <h1 id="form-headline" class="text-black text-2xl font-bold"></h1>
           <form
@@ -289,3 +293,5 @@
     <script src="./index.js"></script>
   </body>
 </html>
+
+<!-- w-[375px] h-[315px] -->

@@ -25,6 +25,13 @@ body {
   }
 }
 
+@media screen and (max-width: 415) {
+  iframe {
+    width: 375px;
+    height: 315px;
+  }
+}
+
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
