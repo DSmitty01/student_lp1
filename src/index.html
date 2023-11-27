@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BB14YW0W0B"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-BB14YW0W0B");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./tailwindcss/output.css" />
@@ -96,11 +110,19 @@
             id="courses"
             class="flex flex-col w-full lg:flex-row space-y-8 md:space-y-52 lg:space-y-0 md:justify-evenly items-center"
           >
+            <!-- wholesaling Course -->
             <div
               id="wholesaling-info"
               class="flex flex-col h-80 w-72 border-2 border-white items-center justify-center pt-6 space-y-8 md:scale-150 lg:scale-100"
             >
-              <span class="rounded-full bg-white h-20 w-20"></span>
+              <span
+                class="flex items-center justify-center rounded-full bg-white h-24 w-24"
+              >
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/student-lp1.appspot.com/o/wholesaling%20reasl%20estate%20deals.png?alt=media&token=ad00eda3-871d-482d-acb1-bcc4686406e9"
+                  alt="Wholesaling Course Icon"
+                />
+              </span>
               <p class="text-white text-center text-lg mb-2 max-w-sm">
                 I want to start and grow my real estate WHOLESALING Business
               </p>
@@ -108,16 +130,25 @@
                 id="wholesale-btn"
                 class="bg-white py-2 px-2 rounded-md font-bold hover:scale-105 transition-all"
               >
-                Start Flipping Contracts
+                Let's Start Wholesaling
               </button>
             </div>
+
+            <!-- Rehabbing Course -->
             <div
               id="rehabbing-info"
               class="flex flex-col h-80 w-72 border-2 border-white items-center justify-center pt-6 space-y-8 md:scale-150 lg:scale-100"
             >
-              <span class="rounded-full bg-white h-20 w-20"></span>
+              <span
+                class="flex items-center justify-center rounded-full bg-white h-24 w-24"
+              >
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/student-lp1.appspot.com/o/rehabbing%20houses.png?alt=media&token=f727e284-0642-4e40-874e-7f98f9c129bf"
+                  alt="Rehabbing Course Icon"
+                />
+              </span>
               <p class="text-white text-center text-lg px-4">
-                I'm ready to find my first FIX & FLIP deal
+                I'm ready to start rehabbing fix and flip deals
               </p>
               <button
                 id="rehab-btn"
@@ -126,19 +157,29 @@
                 Let's Find My Fix & Flip
               </button>
             </div>
+
+            <!-- Landlording Course -->
             <div
               id="rentals-info"
               class="flex flex-col h-80 w-72 border-2 border-white items-center justify-center pt-6 space-y-8 md:scale-150 lg:scale-100"
             >
-              <span class="rounded-full bg-white h-20 w-20"></span>
+              <span
+                class="flex items-center justify-center rounded-full bg-white h-24 w-24"
+              >
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/student-lp1.appspot.com/o/lanlord%20passive%20income.png?alt=media&token=75623ff8-6d66-41e4-bde1-b7be59e907a5"
+                  alt="Landlord Course Icon"
+                  class="scale-110"
+                />
+              </span>
               <p class="text-white text-center text-lg mb-2 max-w-sm">
-                I want to start and grow my real estate WHOLESALING Business
+                I want to learn landlording for passive income
               </p>
               <button
                 id="rentals-btn"
                 class="bg-white py-2 px-2 rounded-md font-bold hover:scale-105 transition-all"
               >
-                Start Flipping Contracts
+                Let's Build Passive Income
               </button>
             </div>
           </div>
@@ -224,15 +265,15 @@
       <!-- courses popup modal -->
       <div
         id="courses-popup"
-        class="hidden fixed bg-black/40 h-screen sm:w-screen z-10"
+        class="hidden fixed bg-black/40 h-screen w-screen z-10 overflow-y-scroll"
       >
         <div
           id="popup-content"
-          class="flex flex-col w-min items-center bg-white/100 m-auto pb-8 relative translate-y-20 animate-slide"
+          class="flex flex-col w-min items-center bg-white/100 m-auto pb-8 relative translate-y-11 animate-slide"
         >
           <span
             id="popup-close-btn"
-            class="text-right w-full pr-6 xs:pr-2 hover:font-bold cursor-pointer mb-4"
+            class="xs:text-right w-full sm:pr-6 text-center hover:font-bold cursor-pointer mb-1"
             >Close</span
           >
           <iframe
@@ -244,9 +285,13 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
-            class="scale-75 m-2 md:m-4 md:scale-100 md:mx-10"
+            class="m-2 md:m-4 md:scale-100 md:mx-10"
           ></iframe>
-          <h1 id="form-headline" class="text-black text-2xl font-bold"></h1>
+          <h1
+            id="form-headline"
+            class="text-black text-2xl font-bold text-center max-w-lg"
+          ></h1>
+          <p class="mb-2">Just fill out this short form...</p>
           <form
             action="https://formsubmit.co/dvelleads+student@gmail.com"
             method="post"
@@ -285,6 +330,12 @@
               class="bg-gray-200 w-2/4 rounded py-2 text-center h-8"
               required
             />
+            <button
+              type="submit"
+              class="bg-siteBlue text-white font-semibold text-lg text-center p-2"
+            >
+              Let's Get Started
+            </button>
           </form>
         </div>
       </div>

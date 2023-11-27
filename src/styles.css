@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* *{
-    margin: 0px;
-    padding: 0px;
-} */
-
 body {
   font-family: "PT Serif", serif;
 }
@@ -25,7 +20,7 @@ body {
   }
 }
 
-@media screen and (max-width: 415) {
+@media screen and (max-width: 500px) {
   iframe {
     width: 375px;
     height: 315px;
@@ -45,7 +40,3 @@ body {
     opacity: 1;
   }
 }
-
-/* #tagline {
-    margin-left: 22px;
-} */

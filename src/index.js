@@ -3,16 +3,15 @@ let wholesaleBtn = document.getElementById("wholesale-btn");
 let rehabBtn = document.getElementById("rehab-btn");
 let rentalsBtn = document.getElementById("rentals-btn");
 let modalCloseBtn = document.getElementById("popup-close-btn");
-let formHighlight = document.getElementById("form-headline").innerText;
+let formHighlight = document.getElementById("form-headline").innerHTML;
 
 let modalHidden = true;
 
 wholesaleBtn.onclick = () => {
   if (modalHidden === true) {
     popup.classList.remove("hidden");
-    formHighlight =
+    document.getElementById("form-headline").innerText =
       "Ready to start flipping deals with little to none of your money?";
-    // popup.classList.add(["flex", "items-center", "justify-center"]);
     modalHidden = false;
   }
 };
@@ -20,8 +19,8 @@ wholesaleBtn.onclick = () => {
 rehabBtn.onclick = () => {
   if (modalHidden === true) {
     popup.classList.remove("hidden");
-    formHighlight = "Ready to learn to rehab houses for big profits?";
-    // popup.classList.add(["flex", "items-center", "justify-center"]);
+    document.getElementById("form-headline").innerText =
+      "Ready to learn to rehab houses for big profits?";
     modalHidden = false;
   }
 };
@@ -29,15 +28,14 @@ rehabBtn.onclick = () => {
 rentalsBtn.onclick = () => {
   if (modalHidden === true) {
     popup.classList.remove("hidden");
-    formHighlight = "Ready to build cashflow with rentals properties?";
-    // popup.classList.add(["flex", "items-center", "justify-center"]);
+    document.getElementById("form-headline").innerText =
+      "Ready to build passive income with rental properties?";
     modalHidden = false;
   }
 };
 
 modalCloseBtn.onclick = () => {
   if (modalHidden === false) {
-    // popup.classList.remove(["flex", "items-center", "justify-center"]);
     popup.classList.add("hidden");
     modalHidden = true;
   }
